@@ -5,8 +5,8 @@ import playerData from './Player.json' assert { type: "json" };
 
 
 
-let slime = new Slime();
-let enemies = [slime];
+
 let player = new Player(playerData.hp, playerData.inventory, playerData.spells, playerData.level, playerData.exp)
 
-initiateFight(enemies);
+
+//initiateFight(enemies);

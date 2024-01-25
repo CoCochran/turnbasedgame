@@ -1,7 +1,9 @@
 {
     "userName": "Player",
     "level": 1,
+    "hp": 25,
     "inventory": [],
-    "spells": []
+    "spells": [],
+    "exp": 0
 }
   
