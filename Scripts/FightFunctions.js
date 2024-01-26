@@ -38,19 +38,28 @@ export function initiateFight(enemies){
 console.log(determineEnemies(enemies))
 
 export function damage(giver, receiver){
-    let x = Math.floor(Math.random() * 3)
+    let x = Math.random() * 100
 
-    switch(x){
-        case 0:
-            receiever.hp = ((giver.damage) - (Math.floor(Math.random() * (giver.damage / 2) + 1)))
-        case 1:
-            let damageDealth
+        if (x < 10){
+            console.log("Miss");
+            let damageDealt = 0;
+        }
+        else if (x > 10 && x < 50){
+            let damageDealt = ((giver.damage) - (Math.floor(Math.random() * (giver.damage / 2) + 1)));
+        }
+        else if (x > 50 && x < 100) {
+            let damageDealt = ((giver.damage) + (Math.floor(Math.random() * (giver.damage / 2) + 1)));
+
+        }
+        receiver.hp -= damageDealt;
         
-    }
-
-
-    
-    
-
 }
+
+export function heal(receiver, amount){
+    if (amount > 0){
+        receiver.hp += amount;
+    }
+}
+
+
 
