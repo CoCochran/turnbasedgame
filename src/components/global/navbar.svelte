@@ -14,7 +14,7 @@
         <a href="/about" class="text-black hover:bg-gray-400 hover:text-white rounded-md px-3 py-2 text-sm font-medium inline-flex" aria-current="page">About</a>
       </div>
       <div class="float-right ml-auto flex inline-flex items-center">
-        <a href="/login" class="text-black hover:bg-gray-400 hover:text-white rounded-md px-3 py-2 text-sm font-medium inline-flex">Team</a>
-        <a href="/sign-up" class="text-black hover:bg-gray-400 hover:text-white rounded-md px-3 py-2 text-sm font-medium inline-flex">Projects</a>
+        <a href="/login" class="text-black hover:bg-gray-400 hover:text-white rounded-md px-3 py-2 text-sm font-medium inline-flex">Log-in</a>
+        <a href="/sign-up" class="text-black hover:bg-gray-400 hover:text-white rounded-md px-3 py-2 text-sm font-medium inline-flex">Sign Up</a>
       </div>
 </nav>
