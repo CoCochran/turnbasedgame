@@ -2,6 +2,8 @@
 	import "../app.css";
 
 	import Navbar from "..\\components\\global\\navbar.svelte";
+	import Page from ".\\index\\index.svelte";
+
 
 </script>
 
@@ -18,7 +20,7 @@
 
 	<!-- Site Content -->
 	<content class="flex-1">
-		<slot />
+		<Page />
 	</content>
 
 	<!-- Footer -->
