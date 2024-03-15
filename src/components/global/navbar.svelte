@@ -2,7 +2,7 @@
 	
 
     const links = {
-        home: '/home'
+        home: '/index'
     }
 </script>
 
