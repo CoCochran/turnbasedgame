@@ -5,17 +5,17 @@
   </script>
   
   <!-- Import Fonts -->
+  
   <svelte:head>
 	<link rel="preconnect" href="https://fonts.bunny.net" />
 	<link
-	  href="https://fonts.bunny.net/css?family=russo-one:400|yellowtail:400"
 	  rel="stylesheet"
 	/>
   
 	<!-- Analytics -->
   </svelte:head>
   
-  <main class="flex flex-col min-h-screen">
+  <main class="flex flex-col min-h-screen bg-gray-400 font-mono">
 	<!-- Navbar -->
 	<header>
 	  <Navbar />

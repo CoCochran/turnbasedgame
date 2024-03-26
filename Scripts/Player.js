@@ -1,3 +1,5 @@
+import playerData from './Player.json' assert { type: "json" };
+
 export class Player{
     constructor(hp=25, inventory=[], spells=[], level=1, exp=0){
         this.maxHP = hp;
@@ -8,4 +10,8 @@ export class Player{
         this.exp = exp;
     }
 
+}
+
+export function createPlayer(){
+    let player = new Player(playerData.hp, playerData.inventory, playerData.spells, playerData.level, playerData.exp);
 }

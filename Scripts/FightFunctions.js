@@ -2,6 +2,8 @@ import { Slime } from './Enemies.js';
 
 const enemies = [Slime];
 
+export let fight = false;
+
 
 
 function determineEnemies(enemies){
@@ -14,8 +16,6 @@ function determineEnemies(enemies){
     }
 
     return fightEnemies;
-
-
 
     
 }
@@ -60,6 +60,23 @@ export function heal(receiver, amount){
         receiver.hp += amount;
     }
 }
+
+export function enemyTurn(enemies){
+    for (enemy in enemies){
+        damage(enemy, player);
+    }
+}
+
+export function fightTrue(fight){
+  fight = true;
+  console.log(false)
+  return fight;
+}
+export function fightFalse(fight){
+  fight = false;
+  return fight;
+}
+
 
 
 
