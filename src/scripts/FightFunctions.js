@@ -1,6 +1,6 @@
 import { Slime } from './Enemies.js';
 
-const enemies = [Slime];
+export const enemies = [Slime];
 
 export let fight = false;
 
@@ -67,15 +67,7 @@ export function enemyTurn(enemies){
     }
 }
 
-export function fightTrue(fight){
-  fight = true;
-  console.log(false)
-  return fight;
-}
-export function fightFalse(fight){
-  fight = false;
-  return fight;
-}
+
 
 
 
