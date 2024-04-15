@@ -32,7 +32,7 @@ export function initiateFight(enemies){
 
     }
     console.log(fightEnemies)
-
+    return fightEnemies;
 }
 
 console.log(determineEnemies(enemies))

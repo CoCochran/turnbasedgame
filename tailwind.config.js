@@ -4,5 +4,8 @@ export default {
   theme: {
     extend: {}
   },
+  fontFamily: {
+    mono: ['monospace', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New'],
+  },
   plugins: []
 };
