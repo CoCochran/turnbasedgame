@@ -15,7 +15,7 @@
 	<!-- Analytics -->
   </svelte:head>
   
-  <main class="flex flex-col min-h-screen bg-gray-400 font-mono">
+  <main class="flex flex-col min-h-screen bg-cyan-800 text-white font-mono">
 	<!-- Navbar -->
 	<header>
 	  <Navbar />
