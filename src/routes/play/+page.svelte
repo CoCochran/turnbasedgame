@@ -1,5 +1,7 @@
 <script>
   import { enemies, initiateFight, damage, heal, enemyTurn} from '../../scripts/FightFunctions'
+  import { Slime } from '../../scripts/Enemies'
+
   let fight = false;
   let fightEnemies;
   export function toggleFight() {
@@ -14,7 +16,8 @@
 
 {#if fight}
   {#each fightEnemies as enemy}
-  <!--WE ARE GOING TO PUT SOMETHING HERE TO GET IT TO WORK, TRUST.  I JUST DONT KNOW WHAT THE FUCK IT IS.-->
+    {enemy.maxHP}
+ 
   {/each}
   <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 pb-6">
    
@@ -48,7 +51,8 @@ Run
   {:else}
     <button class="flex items-center justify-center mt-12 bg-red-800 text-3xl rounded-full px-5 py-2 text-white" on:click={function(){
       toggleFight();
-      let fightEnemies = initiateFight(enemies)
+      fightEnemies = initiateFight(enemies)
+
     }}>
     Fight!
   </button>
