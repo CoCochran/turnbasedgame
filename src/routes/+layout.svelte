@@ -12,7 +12,7 @@
 	<!-- Analytics -->
   </svelte:head>
   
-  <main class="flex flex-col min-h-screen bg-gray-400">
+  <main class="flex flex-col min-h-screen bg-cyan-800 text-white">
 	<!-- Navbar -->
 	<header>
 	  <Navbar />
