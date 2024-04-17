@@ -52,6 +52,7 @@ Run
     <button class="flex items-center justify-center mt-12 bg-red-800 text-3xl rounded-full px-5 py-2 text-white" on:click={function(){
       toggleFight();
       fightEnemies = initiateFight(enemies)
+      console.log(fightEnemies[0].length)
 
     }}>
     Fight!
