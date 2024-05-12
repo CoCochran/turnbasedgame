@@ -1,6 +1,6 @@
 <script>
-  import { enemies, initiateFight, damage, heal, enemyTurn} from '../../scripts/FightFunctions'
-  import { Slime } from '../../scripts/Enemies'
+  import { initiateFight, damage, heal, enemyTurn} from '../../scripts/FightFunctions'
+  import { Slime, enemies } from '../../scripts/Enemies'
 
   let fight = false;
   let fightEnemies;
@@ -16,25 +16,24 @@
 
 {#if fight}
   {#each fightEnemies as enemy}
-    {enemy.maxHP}
- 
+    <p class="px-5">{enemy.maxHP}</p>
   {/each}
   <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 pb-6">
    
-    <button class="bg-red-800 text-3xl rounded-full px-6 py-2 text-white w-40" on:click={function(){
+    <button class="bg-red-800 text-3xl rounded-full px-6 py-2 my-1 text-white w-40" on:click={function(){
       console.log("attack")
       
     }}>
     Attack
   </button>
 
-  <button class="bg-red-800 text-3xl rounded-full px-6 py-2 text-white w-40" on:click={function(){
+  <button class="bg-red-800 text-3xl rounded-full px-6 py-2 my-1 text-white w-40" on:click={function(){
     console.log("spells")
   }}>
   Spells
 </button>
 
-<button class="bg-red-800 text-3xl rounded-full px-6 py-2 text-white w-40" on:click={function(){
+<button class="bg-red-800 text-3xl rounded-full px-6 py-2 my-1 text-white w-40" on:click={function(){
   console.log("items")
 }}>
 Items
@@ -51,8 +50,8 @@ Run
   {:else}
     <button class="flex items-center justify-center mt-12 bg-red-800 text-3xl rounded-full px-5 py-2 text-white" on:click={function(){
       toggleFight();
-      fightEnemies = initiateFight(enemies)
-      console.log(fightEnemies[0].length)
+      fightEnemies = initiateFight(enemies);
+      console.log(fightEnemies[0].length);
 
     }}>
     Fight!

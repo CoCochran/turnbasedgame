@@ -1,6 +1,5 @@
-import { Slime } from './Enemies.js';
+import { Slime, enemies } from './Enemies.js';
 
-export const enemies = [Slime];
 
 export let fight = false;
 
@@ -27,7 +26,8 @@ export function initiateFight(enemies){
     for (let i = 0; i < enemyNumber; i++){
         let enemyIndex = Math.floor(Math.random() * enemies.length);
         let slime = new Slime()
-        fightEnemies.push(enemies[enemyIndex]);
+        fightEnemies.push(slime);
+        //fightEnemies.push(enemies[enemyIndex]);
 
     }
     return fightEnemies;
