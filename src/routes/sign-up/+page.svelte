@@ -12,10 +12,10 @@
     <h1>Sign-Up</h1>
   </div>
     <form>
-      <input class="rounded px-6 py-2" type="text" id="fname" name="fname" placeholder="First Name"><br><br>
-      <input class="rounded px-6 py-2" type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
-      <input class="rounded px-6 py-2" type="text" id="email" name="email" placeholder="Email Address"><br><br>
-      <input class="rounded px-6 py-2" type="password" id="password" name="password" placeholder="Password"><br><br>
+      <input class="rounded px-6 py-2" type="text" id="fname" name="fnz" placeholder="Email"><br><br>
+      <input class="rounded px-6 py-2" type="text" id="lname" name="lname" placeholder="Confirm Email"><br><br>
+      <input class="rounded px-6 py-2" type="password" id="email" name="email" placeholder="Password"><br><br>
+      <input class="rounded px-6 py-2" type="password" id="password" name="password" placeholder="Confirm Password"><br><br>
 
       <input class="bg-red-800 p-[10px] rounded-full text-white w-64" type="submit" value="Submit">
     </form>
