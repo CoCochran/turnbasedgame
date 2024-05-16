@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   </head>
   <body class='flex justify-center py-[8%]'>
-<div class=" mx-[20%] text-center border border-red-800 py-20 shadow-md shadow shadow-gray-500 w-[25%]">
+<div class=" mx-[20%] text-center border border-red-800 py-20  shadow-md shadow shadow-gray-500 w-[25%]">
   <div class='my-5 text-2xl underline'>
     <h1>Sign-Up</h1>
   </div>

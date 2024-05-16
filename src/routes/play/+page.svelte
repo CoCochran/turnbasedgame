@@ -15,8 +15,9 @@
     <div class="flex justify-center py-[20%]">
 
 {#if fight}
+ let i = 0;
   {#each fightEnemies as enemy}
-    <p class="px-5">{enemy.maxHP}</p>
+    <p class="px-5" id={`${i}`}>{enemy.maxHP}</p>
   {/each}
   <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 pb-6">
    
